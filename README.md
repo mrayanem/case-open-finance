@@ -1,2 +1,12 @@
-# Case OpenFinance 
-Solução de arquitetura em AWS para Open Finance focada na exposição e consumo seguro de dados cadastrais de clientes pessoa física entre instituições financeiras parceiras. O projeto aplica microsserviços, serverless, eventos e boas práticas de segurança, escalabilidade e observabilidade, utilizando serviços gerenciados da AWS.
+# Solução AWS para Open Finance - Itaú Consignado  
+
+Arquitetura serverless para compartilhamento seguro de dados cadastrais entre instituições financeiras, atendendo aos requisitos do Open Finance.  
+
+## **Funcionalidades**  
+✔ **Exposição de APIs** (API Gateway + Lambda)  
+✔ **Armazenamento escalável** (DynamoDB + Aurora)  
+✔ **Processamento assíncrono** (SQS + EventBridge)  
+✔ **Segurança multicamada** (WAF, Cognito, KMS)  
+✔ **Observabilidade** (CloudWatch, X-Ray) 
+
+## **Introdução ao Problema**  
