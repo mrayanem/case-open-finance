@@ -1,4 +1,4 @@
-# Solução AWS para Open Finance - Itaú Consignado
+#  Solução AWS para Open Finance - Itaú Consignado
 
 Arquitetura **serverless** para o compartilhamento seguro de dados cadastrais entre instituições financeiras, em conformidade com os requisitos do **Open Finance**.
 
@@ -36,6 +36,12 @@ O desafio consiste em viabilizar o **compartilhamento seguro de dados cadastrais
 ###  Entrada de Dados (Inbound)
 
 - **API Gateway + AWS Lambda**: Recebem requisições externas, validam e transformam os dados conforme regras de negócio.
+
+###  Saída de Dados (Outbound)
+
+- **AWS Lambda**: Consome dados armazenados (ex: no DynamoDB), realiza transformações necessárias e prepara os dados para envio.  
+- **Amazon EventBridge / SQS**: Orquestra a entrega de eventos ou mensagens para destinos externos, garantindo resiliência e desacoplamento.  
+- **API externa / HTTP**: Os dados são enviados para instituições parceiras ou outros consumidores por meio de APIs seguras.
 
 ###  Armazenamento
 
